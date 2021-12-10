@@ -1,4 +1,5 @@
 # Import packages
+import  numpy as np
 import pandas as pd
 from typing import final
 import requests
@@ -6,6 +7,7 @@ from bs4 import BeautifulSoup
 import urllib # Una forma estandard de descargar datos
 import os  # Para manejo de archivos y directorios
 import glob
+import zipfile # Descompresión de archivos
 # Specify url
 url = 'http://www.dgis.salud.gob.mx/contenidos/basesdedatos/da_nacimientos_gobmx.html'
 
@@ -45,6 +47,8 @@ for item in LinksFinales:
     filename=filename[0 :len(filename)-6]
     if not os.path.exists("./datos/"+filename):
         dl,site=urllib.request.urlretrieve(item,'./datos/'+filename)
+        with zipfile.ZipFile(covid_dic_conceptos_archivo, "r") as zip_ref:
+            zip_ref.extractall("../data/")
 
 
 natalidad_2017 = pd.read_csv('./datos/sinac2017DatosAbiertos.csv',low_memory=False)
@@ -70,7 +74,7 @@ natalidadtotal.columns
 natalidadtotal.to_csv('./datos/Sonora2017_18_19.csv')
 
 
-natalidad_2020 = pd.read_csv('./datos/sinac_2020.csv',low_memory=False)
+natalidad_2020 = pd.read_csv('./datos/sinac2020.csv',low_memory=False)
 
 natalidad_2020_sonora=natalidad_2020[natalidad_2020['ENTIDADFEDERATIVAPARTO']==26]
 natalidad_2020_sonora=natalidad_2020_sonora.loc[:,['ENTIDADNACIMIENTO','MUNICIPIONACIMIENTO','FECHANACIMIENTOMADRE','EDAD','SECONSIDERAINDIGENA','HABLALENGUAINDIGENA','ESTADOCONYUGAL','ENTIDADRESIDENCIA','MUNICIPIORESIDENCIA','LOCALIDADRESIDENCIA','NUMEROEMBARAZOS','HIJOSNACIDOSMUERTOS','HIJOSNACIDOSVIVOS','HIJOSSOBREVIVIENTES','CONDICIONHIJOANTERIOR','VIVEHIJOANTERIOR','ORDENNACIMIENTO','ATENCIONPRENATAL','TRIMESTREPRIMERCONSULTA','TOTALCONSULTAS','SOBREVIVIOPARTO','AFILIACION','ESCOLARIDAD','TRABAJAACTUALMENTE','FECHANACIMIENTO','HORANACIMIENTO','SEXO','EDADGESTACIONAL','TALLA','PESO','APGAR','SILVERMAN','VACUNA_BCG','VACUNAHEPATITIS_B','VITAMINA_A','VITAMINA_K','TAMIZAUDITIVO','PRODUCTOEMBARAZO','TIPOCESAREA','UTILIZOFORCEPS','LUGARNACIMIENTO','CLUES','PERSONALATENDIO','ENTIDADFEDERATIVAPARTO','MUNICIPIOPARTO','LOCALIDADPARTO','CERTIFICADOPOR','ENTIDADFEDERATIVACERTIFICA','MUNICIPIOCERTIFICA','LOCALIDADCERTIFICA','FECHACERTIFICADO']]
