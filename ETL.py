@@ -50,7 +50,22 @@ for item in LinksFinales:
         with zipfile.ZipFile(covid_dic_conceptos_archivo, "r") as zip_ref:
             zip_ref.extractall("../data/")
 
+import glob
+path = r'./Datos/' # use your path
+all_files = glob.glob(path + "/*.csv")
 
+
+with open("output_file.csv", "w") as outfile:
+    for filename in all_files:
+        with open(filename) as infile:
+            contents = infile.read()
+            outfile.write(contents)
+
+            
+            
+            
+            
+            
 natalidad_2017 = pd.read_csv('./datos/sinac2017DatosAbiertos.csv',low_memory=False)
 natalidad_2018 = pd.read_csv('./datos/sinac2018DatosAbiertos.csv',low_memory=False)
 natalidad_2019 = pd.read_csv('./datos/sinac2019DatosAbiertos.csv',low_memory=False)
