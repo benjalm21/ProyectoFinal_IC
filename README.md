@@ -5,4 +5,8 @@ Trabajo de integracion de todo lo aprendido en la materia de Ingenieria de Carac
 
 2.-[Limpieza de datos](https://github.com/benjalm21/ProyectoFinal_IC/blob/main/Limpieza%20de%20datos.ipynb)
 
-3.- [Visualizacion Grafica de los datos](https://public.tableau.com/app/profile/benjamin.lopez.mendoza8106/viz/NatalidadSonora/NatalidadenSonora2017-2020)
+3.- Analisis de Datos
+
+4.- [Dashboard](https://public.tableau.com/app/profile/benjamin.lopez.mendoza8106/viz/NatalidadSonora/NatalidadenSonora2017-2020)
+
+
