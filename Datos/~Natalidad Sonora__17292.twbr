@@ -1,0 +1,1931 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1018.0949                               -->
+<workbook source-build='2021.3.3 (20213.21.1018.0949)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='TotalNacimientos2017_2020' inline='true' name='federated.0emqcif041e73n12lbhfa182ccqj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='TotalNacimientos2017_2020' name='textscan.0hpx9cc0v4i4b616ese4b03wf7na'>
+            <connection class='textscan' directory='C:/Users/benja/OneDrive/Documentos/GitHub/ProyectoFinal_IC' filename='TotalNacimientos2017_2020.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='ESCOLARIDAD' name='excel-direct.1r8ypr40jtyz951fmcc3z1wfk4wm'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/benja/OneDrive/Documentos/GitHub/ProyectoFinal_IC/Datos/ESCOLARIDAD.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='SEXO' name='excel-direct.0gam4ya1qoda3616lqgwg0yb8zpq'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/benja/OneDrive/Documentos/GitHub/ProyectoFinal_IC/Datos/SEXO.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='SI_NO' name='excel-direct.0xzrqxs0k0py241c4n65816wgqgq'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/benja/OneDrive/Documentos/GitHub/ProyectoFinal_IC/Datos/SI_NO.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0xzrqxs0k0py241c4n65816wgqgq' name='Hoja12' table='[Hoja1$]' type='table'>
+          <columns gridOrigin='A1:B6:no:A1:B6:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Clave' ordinal='0' />
+            <column datatype='string' name='Descripción' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.0hpx9cc0v4i4b616ese4b03wf7na' name='TotalNacimientos2017_2020.csv' table='[TotalNacimientos2017_2020#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='ENTIDADNACIMIENTO' ordinal='0' />
+              <column datatype='real' name='MUNICIPIONACIMIENTO' ordinal='1' />
+              <column datatype='date' name='FECHANACIMIENTOMADRE' ordinal='2' />
+              <column datatype='string' name='EDAD' ordinal='3' />
+              <column datatype='integer' name='ESTADOCONYUGAL' ordinal='4' />
+              <column datatype='integer' name='ENTIDADRESIDENCIA' ordinal='5' />
+              <column datatype='integer' name='MUNICIPIORESIDENCIA' ordinal='6' />
+              <column datatype='integer' name='LOCALIDADRESIDENCIA' ordinal='7' />
+              <column datatype='integer' name='NUMEROEMBARAZOS' ordinal='8' />
+              <column datatype='integer' name='HIJOSNACIDOSMUERTOS' ordinal='9' />
+              <column datatype='integer' name='HIJOSNACIDOSVIVOS' ordinal='10' />
+              <column datatype='integer' name='HIJOSSOBREVIVIENTES' ordinal='11' />
+              <column datatype='integer' name='CONDICIONHIJOANTERIOR' ordinal='12' />
+              <column datatype='integer' name='VIVEHIJOANTERIOR' ordinal='13' />
+              <column datatype='integer' name='ORDENNACIMIENTO' ordinal='14' />
+              <column datatype='integer' name='ATENCIONPRENATAL' ordinal='15' />
+              <column datatype='integer' name='TRIMESTREPRIMERCONSULTA' ordinal='16' />
+              <column datatype='integer' name='TOTALCONSULTAS' ordinal='17' />
+              <column datatype='integer' name='SOBREVIVIOPARTO' ordinal='18' />
+              <column datatype='integer' name='AFILIACION' ordinal='19' />
+              <column datatype='integer' name='ESCOLARIDAD' ordinal='20' />
+              <column datatype='integer' name='TRABAJAACTUALMENTE' ordinal='21' />
+              <column datatype='date' name='FECHANACIMIENTO' ordinal='22' />
+              <column datatype='datetime' name='HORANACIMIENTO' ordinal='23' />
+              <column datatype='integer' name='SEXO' ordinal='24' />
+              <column datatype='integer' name='EDADGESTACIONAL' ordinal='25' />
+              <column datatype='integer' name='TALLA' ordinal='26' />
+              <column datatype='integer' name='PESO' ordinal='27' />
+              <column datatype='integer' name='APGAR' ordinal='28' />
+              <column datatype='integer' name='SILVERMAN' ordinal='29' />
+              <column datatype='integer' name='VACUNA_BCG' ordinal='30' />
+              <column datatype='integer' name='VACUNAHEPATITIS_B' ordinal='31' />
+              <column datatype='integer' name='VITAMINA_A' ordinal='32' />
+              <column datatype='integer' name='VITAMINA_K' ordinal='33' />
+              <column datatype='integer' name='TAMIZAUDITIVO' ordinal='34' />
+              <column datatype='integer' name='PRODUCTOEMBARAZO' ordinal='35' />
+              <column datatype='integer' name='TIPOCESAREA' ordinal='36' />
+              <column datatype='real' name='UTILIZOFORCEPS' ordinal='37' />
+              <column datatype='integer' name='LUGARNACIMIENTO' ordinal='38' />
+              <column datatype='string' name='CLUES' ordinal='39' />
+              <column datatype='real' name='PERSONALATENDIO' ordinal='40' />
+              <column datatype='integer' name='ENTIDADFEDERATIVAPARTO' ordinal='41' />
+              <column datatype='integer' name='MUNICIPIOPARTO' ordinal='42' />
+              <column datatype='integer' name='LOCALIDADPARTO' ordinal='43' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0xzrqxs0k0py241c4n65816wgqgq' name='Hoja12' table='[Hoja1$]' type='table'>
+            <columns gridOrigin='A1:B6:no:A1:B6:0' header='yes' outcome='2'>
+              <column datatype='integer' name='Clave' ordinal='0' />
+              <column datatype='string' name='Descripción' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1r8ypr40jtyz951fmcc3z1wfk4wm' name='Hoja1' table='[Hoja1$]' type='table'>
+            <columns gridOrigin='A1:B29:no:A1:B29:0' header='yes' outcome='2'>
+              <column datatype='integer' name='Clave' ordinal='0' />
+              <column datatype='string' name='Descripción' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0gam4ya1qoda3616lqgwg0yb8zpq' name='Hoja11' table='[Hoja1$]' type='table'>
+            <columns gridOrigin='A1:B5:no:A1:B5:1' lost='0' outcome='1' processed='4'>
+              <column datatype='integer' name='Clave' ordinal='0' />
+              <column datatype='string' name='Descripción' ordinal='1' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[AFILIACION]' value='[TotalNacimientos2017_2020.csv].[AFILIACION]' />
+          <map key='[APGAR]' value='[TotalNacimientos2017_2020.csv].[APGAR]' />
+          <map key='[ATENCIONPRENATAL]' value='[TotalNacimientos2017_2020.csv].[ATENCIONPRENATAL]' />
+          <map key='[CLUES]' value='[TotalNacimientos2017_2020.csv].[CLUES]' />
+          <map key='[CONDICIONHIJOANTERIOR]' value='[TotalNacimientos2017_2020.csv].[CONDICIONHIJOANTERIOR]' />
+          <map key='[Clave (Hoja11)]' value='[Hoja11].[Clave]' />
+          <map key='[Clave (Hoja12)]' value='[Hoja12].[Clave]' />
+          <map key='[Clave]' value='[Hoja1].[Clave]' />
+          <map key='[Descripción (Hoja11)]' value='[Hoja11].[Descripción]' />
+          <map key='[Descripción (Hoja12)]' value='[Hoja12].[Descripción]' />
+          <map key='[Descripción]' value='[Hoja1].[Descripción]' />
+          <map key='[EDADGESTACIONAL]' value='[TotalNacimientos2017_2020.csv].[EDADGESTACIONAL]' />
+          <map key='[EDAD]' value='[TotalNacimientos2017_2020.csv].[EDAD]' />
+          <map key='[ENTIDADFEDERATIVAPARTO]' value='[TotalNacimientos2017_2020.csv].[ENTIDADFEDERATIVAPARTO]' />
+          <map key='[ENTIDADNACIMIENTO]' value='[TotalNacimientos2017_2020.csv].[ENTIDADNACIMIENTO]' />
+          <map key='[ENTIDADRESIDENCIA]' value='[TotalNacimientos2017_2020.csv].[ENTIDADRESIDENCIA]' />
+          <map key='[ESCOLARIDAD]' value='[TotalNacimientos2017_2020.csv].[ESCOLARIDAD]' />
+          <map key='[ESTADOCONYUGAL]' value='[TotalNacimientos2017_2020.csv].[ESTADOCONYUGAL]' />
+          <map key='[FECHANACIMIENTOMADRE]' value='[TotalNacimientos2017_2020.csv].[FECHANACIMIENTOMADRE]' />
+          <map key='[FECHANACIMIENTO]' value='[TotalNacimientos2017_2020.csv].[FECHANACIMIENTO]' />
+          <map key='[HIJOSNACIDOSMUERTOS]' value='[TotalNacimientos2017_2020.csv].[HIJOSNACIDOSMUERTOS]' />
+          <map key='[HIJOSNACIDOSVIVOS]' value='[TotalNacimientos2017_2020.csv].[HIJOSNACIDOSVIVOS]' />
+          <map key='[HIJOSSOBREVIVIENTES]' value='[TotalNacimientos2017_2020.csv].[HIJOSSOBREVIVIENTES]' />
+          <map key='[HORANACIMIENTO]' value='[TotalNacimientos2017_2020.csv].[HORANACIMIENTO]' />
+          <map key='[LOCALIDADPARTO]' value='[TotalNacimientos2017_2020.csv].[LOCALIDADPARTO]' />
+          <map key='[LOCALIDADRESIDENCIA]' value='[TotalNacimientos2017_2020.csv].[LOCALIDADRESIDENCIA]' />
+          <map key='[LUGARNACIMIENTO]' value='[TotalNacimientos2017_2020.csv].[LUGARNACIMIENTO]' />
+          <map key='[MUNICIPIONACIMIENTO]' value='[TotalNacimientos2017_2020.csv].[MUNICIPIONACIMIENTO]' />
+          <map key='[MUNICIPIOPARTO]' value='[TotalNacimientos2017_2020.csv].[MUNICIPIOPARTO]' />
+          <map key='[MUNICIPIORESIDENCIA]' value='[TotalNacimientos2017_2020.csv].[MUNICIPIORESIDENCIA]' />
+          <map key='[NUMEROEMBARAZOS]' value='[TotalNacimientos2017_2020.csv].[NUMEROEMBARAZOS]' />
+          <map key='[ORDENNACIMIENTO]' value='[TotalNacimientos2017_2020.csv].[ORDENNACIMIENTO]' />
+          <map key='[PERSONALATENDIO]' value='[TotalNacimientos2017_2020.csv].[PERSONALATENDIO]' />
+          <map key='[PESO]' value='[TotalNacimientos2017_2020.csv].[PESO]' />
+          <map key='[PRODUCTOEMBARAZO]' value='[TotalNacimientos2017_2020.csv].[PRODUCTOEMBARAZO]' />
+          <map key='[SEXO]' value='[TotalNacimientos2017_2020.csv].[SEXO]' />
+          <map key='[SILVERMAN]' value='[TotalNacimientos2017_2020.csv].[SILVERMAN]' />
+          <map key='[SOBREVIVIOPARTO]' value='[TotalNacimientos2017_2020.csv].[SOBREVIVIOPARTO]' />
+          <map key='[TALLA]' value='[TotalNacimientos2017_2020.csv].[TALLA]' />
+          <map key='[TAMIZAUDITIVO]' value='[TotalNacimientos2017_2020.csv].[TAMIZAUDITIVO]' />
+          <map key='[TIPOCESAREA]' value='[TotalNacimientos2017_2020.csv].[TIPOCESAREA]' />
+          <map key='[TOTALCONSULTAS]' value='[TotalNacimientos2017_2020.csv].[TOTALCONSULTAS]' />
+          <map key='[TRABAJAACTUALMENTE]' value='[TotalNacimientos2017_2020.csv].[TRABAJAACTUALMENTE]' />
+          <map key='[TRIMESTREPRIMERCONSULTA]' value='[TotalNacimientos2017_2020.csv].[TRIMESTREPRIMERCONSULTA]' />
+          <map key='[UTILIZOFORCEPS]' value='[TotalNacimientos2017_2020.csv].[UTILIZOFORCEPS]' />
+          <map key='[VACUNAHEPATITIS_B]' value='[TotalNacimientos2017_2020.csv].[VACUNAHEPATITIS_B]' />
+          <map key='[VACUNA_BCG]' value='[TotalNacimientos2017_2020.csv].[VACUNA_BCG]' />
+          <map key='[VITAMINA_A]' value='[TotalNacimientos2017_2020.csv].[VITAMINA_A]' />
+          <map key='[VITAMINA_K]' value='[TotalNacimientos2017_2020.csv].[VITAMINA_K]' />
+          <map key='[VIVEHIJOANTERIOR]' value='[TotalNacimientos2017_2020.csv].[VIVEHIJOANTERIOR]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENTIDADNACIMIENTO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ENTIDADNACIMIENTO]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>ENTIDADNACIMIENTO</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MUNICIPIONACIMIENTO</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MUNICIPIONACIMIENTO]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>MUNICIPIONACIMIENTO</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FECHANACIMIENTOMADRE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[FECHANACIMIENTOMADRE]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>FECHANACIMIENTOMADRE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EDAD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EDAD]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>EDAD</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ESTADOCONYUGAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ESTADOCONYUGAL]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>ESTADOCONYUGAL</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENTIDADRESIDENCIA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ENTIDADRESIDENCIA]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>ENTIDADRESIDENCIA</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MUNICIPIORESIDENCIA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MUNICIPIORESIDENCIA]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>MUNICIPIORESIDENCIA</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LOCALIDADRESIDENCIA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LOCALIDADRESIDENCIA]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>LOCALIDADRESIDENCIA</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NUMEROEMBARAZOS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NUMEROEMBARAZOS]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>NUMEROEMBARAZOS</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HIJOSNACIDOSMUERTOS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HIJOSNACIDOSMUERTOS]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>HIJOSNACIDOSMUERTOS</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HIJOSNACIDOSVIVOS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HIJOSNACIDOSVIVOS]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>HIJOSNACIDOSVIVOS</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HIJOSSOBREVIVIENTES</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HIJOSSOBREVIVIENTES]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>HIJOSSOBREVIVIENTES</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONDICIONHIJOANTERIOR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CONDICIONHIJOANTERIOR]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>CONDICIONHIJOANTERIOR</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VIVEHIJOANTERIOR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VIVEHIJOANTERIOR]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>VIVEHIJOANTERIOR</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORDENNACIMIENTO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ORDENNACIMIENTO]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>ORDENNACIMIENTO</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ATENCIONPRENATAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ATENCIONPRENATAL]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>ATENCIONPRENATAL</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TRIMESTREPRIMERCONSULTA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TRIMESTREPRIMERCONSULTA]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>TRIMESTREPRIMERCONSULTA</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTALCONSULTAS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOTALCONSULTAS]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>TOTALCONSULTAS</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOBREVIVIOPARTO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SOBREVIVIOPARTO]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>SOBREVIVIOPARTO</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AFILIACION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AFILIACION]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>AFILIACION</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ESCOLARIDAD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ESCOLARIDAD]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>ESCOLARIDAD</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TRABAJAACTUALMENTE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TRABAJAACTUALMENTE]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>TRABAJAACTUALMENTE</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FECHANACIMIENTO</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[FECHANACIMIENTO]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>FECHANACIMIENTO</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HORANACIMIENTO</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[HORANACIMIENTO]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>HORANACIMIENTO</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SEXO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SEXO]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>SEXO</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EDADGESTACIONAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EDADGESTACIONAL]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>EDADGESTACIONAL</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TALLA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TALLA]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>TALLA</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PESO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PESO]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>PESO</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>APGAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[APGAR]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>APGAR</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SILVERMAN</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SILVERMAN]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>SILVERMAN</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VACUNA_BCG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VACUNA_BCG]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>VACUNA_BCG</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VACUNAHEPATITIS_B</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VACUNAHEPATITIS_B]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>VACUNAHEPATITIS_B</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VITAMINA_A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VITAMINA_A]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>VITAMINA_A</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VITAMINA_K</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VITAMINA_K]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>VITAMINA_K</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAMIZAUDITIVO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TAMIZAUDITIVO]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>TAMIZAUDITIVO</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRODUCTOEMBARAZO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRODUCTOEMBARAZO]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>PRODUCTOEMBARAZO</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TIPOCESAREA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TIPOCESAREA]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>TIPOCESAREA</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UTILIZOFORCEPS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UTILIZOFORCEPS]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>UTILIZOFORCEPS</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LUGARNACIMIENTO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LUGARNACIMIENTO]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>LUGARNACIMIENTO</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLUES</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CLUES]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>CLUES</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERSONALATENDIO</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERSONALATENDIO]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>PERSONALATENDIO</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENTIDADFEDERATIVAPARTO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ENTIDADFEDERATIVAPARTO]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>ENTIDADFEDERATIVAPARTO</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MUNICIPIOPARTO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MUNICIPIOPARTO]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>MUNICIPIOPARTO</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LOCALIDADPARTO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LOCALIDADPARTO]</local-name>
+            <parent-name>[TotalNacimientos2017_2020.csv]</parent-name>
+            <remote-alias>LOCALIDADPARTO</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clave</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Clave (Hoja12)]</local-name>
+            <parent-name>[Hoja12]</parent-name>
+            <remote-alias>Clave</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Descripción</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Descripción (Hoja12)]</local-name>
+            <parent-name>[Hoja12]</parent-name>
+            <remote-alias>Descripción</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Hoja12]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B6:no:A1:B6:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clave</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Clave]</local-name>
+            <parent-name>[Hoja1]</parent-name>
+            <remote-alias>Clave</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Descripción</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Descripción]</local-name>
+            <parent-name>[Hoja1]</parent-name>
+            <remote-alias>Descripción</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Hoja1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B29:no:A1:B29:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clave</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Clave (Hoja11)]</local-name>
+            <parent-name>[Hoja11]</parent-name>
+            <remote-alias>Clave</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Descripción</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Descripción (Hoja11)]</local-name>
+            <parent-name>[Hoja11]</parent-name>
+            <remote-alias>Descripción</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Hoja11]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B5:no:A1:B5:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>4</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Afiliacion' datatype='integer' name='[AFILIACION]' role='measure' type='quantitative' />
+      <column caption='Apgar' datatype='integer' name='[APGAR]' role='measure' type='quantitative' />
+      <column caption='Atencionprenatal' datatype='integer' name='[ATENCIONPRENATAL]' role='measure' type='quantitative' />
+      <column caption='Clues' datatype='string' name='[CLUES]' role='dimension' type='nominal' />
+      <column caption='Condicionhijoanterior' datatype='integer' name='[CONDICIONHIJOANTERIOR]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Descripción (Hoja11)]' role='dimension' type='nominal' />
+      <column caption='Edadgestacional' datatype='integer' name='[EDADGESTACIONAL]' role='measure' type='quantitative' />
+      <column caption='Edad' datatype='string' name='[EDAD]' role='dimension' type='nominal' />
+      <column caption='Entidadfederativaparto' datatype='integer' name='[ENTIDADFEDERATIVAPARTO]' role='measure' type='quantitative' />
+      <column caption='Entidadnacimiento' datatype='integer' name='[ENTIDADNACIMIENTO]' role='measure' type='quantitative' />
+      <column caption='Entidadresidencia' datatype='integer' name='[ENTIDADRESIDENCIA]' role='measure' type='quantitative' />
+      <column caption='Escolaridad' datatype='integer' name='[ESCOLARIDAD]' role='measure' type='quantitative' />
+      <column caption='Estadoconyugal' datatype='integer' name='[ESTADOCONYUGAL]' role='measure' type='quantitative' />
+      <column caption='Fechanacimientomadre' datatype='date' name='[FECHANACIMIENTOMADRE]' role='dimension' type='ordinal' />
+      <column caption='Fechanacimiento' datatype='date' name='[FECHANACIMIENTO]' role='dimension' type='ordinal' />
+      <column caption='Hijosnacidosmuertos' datatype='integer' name='[HIJOSNACIDOSMUERTOS]' role='measure' type='quantitative' />
+      <column caption='Hijosnacidosvivos' datatype='integer' name='[HIJOSNACIDOSVIVOS]' role='measure' type='quantitative' />
+      <column caption='Hijossobrevivientes' datatype='integer' name='[HIJOSSOBREVIVIENTES]' role='measure' type='quantitative' />
+      <column aggregation='Hour' caption='Horanacimiento' datatype='datetime' name='[HORANACIMIENTO]' role='dimension' type='ordinal' />
+      <column caption='Localidadparto' datatype='integer' name='[LOCALIDADPARTO]' role='measure' type='quantitative' />
+      <column caption='Localidadresidencia' datatype='integer' name='[LOCALIDADRESIDENCIA]' role='measure' type='quantitative' />
+      <column caption='Lugarnacimiento' datatype='integer' name='[LUGARNACIMIENTO]' role='measure' type='quantitative' />
+      <column caption='Municipionacimiento' datatype='real' name='[MUNICIPIONACIMIENTO]' role='measure' type='quantitative' />
+      <column caption='Municipioparto' datatype='integer' name='[MUNICIPIOPARTO]' role='measure' type='quantitative' />
+      <column caption='Municipioresidencia' datatype='integer' name='[MUNICIPIORESIDENCIA]' role='measure' type='quantitative' />
+      <column caption='Numeroembarazos' datatype='integer' name='[NUMEROEMBARAZOS]' role='measure' type='quantitative' />
+      <column caption='Ordennacimiento' datatype='integer' name='[ORDENNACIMIENTO]' role='measure' type='quantitative' />
+      <column caption='Personalatendio' datatype='real' name='[PERSONALATENDIO]' role='measure' type='quantitative' />
+      <column caption='Peso' datatype='integer' name='[PESO]' role='measure' type='quantitative' />
+      <column caption='Productoembarazo' datatype='integer' name='[PRODUCTOEMBARAZO]' role='measure' type='quantitative' />
+      <column caption='Sexo' datatype='integer' name='[SEXO]' role='measure' type='quantitative' />
+      <column caption='Silverman' datatype='integer' name='[SILVERMAN]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Sobrevivioparto' datatype='integer' name='[SOBREVIVIOPARTO]' role='dimension' type='ordinal' />
+      <column caption='Talla' datatype='integer' name='[TALLA]' role='measure' type='quantitative' />
+      <column caption='Tamizauditivo' datatype='integer' name='[TAMIZAUDITIVO]' role='measure' type='quantitative' />
+      <column caption='Tipocesarea' datatype='integer' name='[TIPOCESAREA]' role='measure' type='quantitative' />
+      <column caption='Totalconsultas' datatype='integer' name='[TOTALCONSULTAS]' role='measure' type='quantitative' />
+      <column caption='Trabajaactualmente' datatype='integer' name='[TRABAJAACTUALMENTE]' role='measure' type='quantitative' />
+      <column caption='Trimestreprimerconsulta' datatype='integer' name='[TRIMESTREPRIMERCONSULTA]' role='measure' type='quantitative' />
+      <column caption='Utilizoforceps' datatype='real' name='[UTILIZOFORCEPS]' role='measure' type='quantitative' />
+      <column caption='Vacunahepatitis B' datatype='integer' name='[VACUNAHEPATITIS_B]' role='measure' type='quantitative' />
+      <column caption='Vacuna Bcg' datatype='integer' name='[VACUNA_BCG]' role='measure' type='quantitative' />
+      <column caption='Vitamina A' datatype='integer' name='[VITAMINA_A]' role='measure' type='quantitative' />
+      <column caption='Vitamina K' datatype='integer' name='[VITAMINA_K]' role='measure' type='quantitative' />
+      <column caption='Vivehijoanterior' datatype='integer' name='[VIVEHIJOANTERIOR]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Hoja12' datatype='table' name='[__tableau_internal_object_id__].[Hoja1_090875B9567F4EB6B20F26B52BB808D9]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Hoja1' datatype='table' name='[__tableau_internal_object_id__].[Hoja1_09459B7AFA4C4F03BB2F230500D6F09E]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Hoja11' datatype='table' name='[__tableau_internal_object_id__].[Hoja1_2A49F4C276334087974F54F228C9690A]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='TotalNacimientos2017_2020.csv' datatype='table' name='[__tableau_internal_object_id__].[TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384]' role='measure' type='quantitative' />
+      <column-instance column='[Descripción (Hoja11)]' derivation='None' name='[none:Descripción (Hoja11):nk]' pivot='key' type='nominal' />
+      <column-instance column='[EDAD]' derivation='None' name='[none:EDAD:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Descripción (Hoja11):nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;HOMBRE&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;SE IGNORA&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;NO ESPECIFICADO&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;MUJER&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:EDAD:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;17&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;37&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;999&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;0&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;29&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;49&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;13&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;33&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;53&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;21&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;41&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;18&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;38&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;14&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;34&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;54&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;27&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;47&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;10&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;30&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;50&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;25&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;45&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;15&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;35&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;56&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;22&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;42&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;23&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;43&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;26&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;46&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;28&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;48&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;19&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;39&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;16&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;36&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;99&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;11&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;31&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;51&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;24&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;44&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;20&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;40&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;12&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;32&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;52&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Mexico&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Hoja12' id='Hoja1_090875B9567F4EB6B20F26B52BB808D9'>
+            <properties context=''>
+              <relation connection='excel-direct.0xzrqxs0k0py241c4n65816wgqgq' name='Hoja12' table='[Hoja1$]' type='table'>
+                <columns gridOrigin='A1:B6:no:A1:B6:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Clave' ordinal='0' />
+                  <column datatype='string' name='Descripción' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Hoja1' id='Hoja1_09459B7AFA4C4F03BB2F230500D6F09E'>
+            <properties context=''>
+              <relation connection='excel-direct.1r8ypr40jtyz951fmcc3z1wfk4wm' name='Hoja1' table='[Hoja1$]' type='table'>
+                <columns gridOrigin='A1:B29:no:A1:B29:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Clave' ordinal='0' />
+                  <column datatype='string' name='Descripción' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Hoja11' id='Hoja1_2A49F4C276334087974F54F228C9690A'>
+            <properties context=''>
+              <relation connection='excel-direct.0gam4ya1qoda3616lqgwg0yb8zpq' name='Hoja11' table='[Hoja1$]' type='table'>
+                <columns gridOrigin='A1:B5:no:A1:B5:1' lost='0' outcome='1' processed='4'>
+                  <column datatype='integer' name='Clave' ordinal='0' />
+                  <column datatype='string' name='Descripción' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='TotalNacimientos2017_2020.csv' id='TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384'>
+            <properties context=''>
+              <relation connection='textscan.0hpx9cc0v4i4b616ese4b03wf7na' name='TotalNacimientos2017_2020.csv' table='[TotalNacimientos2017_2020#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='ENTIDADNACIMIENTO' ordinal='0' />
+                  <column datatype='real' name='MUNICIPIONACIMIENTO' ordinal='1' />
+                  <column datatype='date' name='FECHANACIMIENTOMADRE' ordinal='2' />
+                  <column datatype='string' name='EDAD' ordinal='3' />
+                  <column datatype='integer' name='ESTADOCONYUGAL' ordinal='4' />
+                  <column datatype='integer' name='ENTIDADRESIDENCIA' ordinal='5' />
+                  <column datatype='integer' name='MUNICIPIORESIDENCIA' ordinal='6' />
+                  <column datatype='integer' name='LOCALIDADRESIDENCIA' ordinal='7' />
+                  <column datatype='integer' name='NUMEROEMBARAZOS' ordinal='8' />
+                  <column datatype='integer' name='HIJOSNACIDOSMUERTOS' ordinal='9' />
+                  <column datatype='integer' name='HIJOSNACIDOSVIVOS' ordinal='10' />
+                  <column datatype='integer' name='HIJOSSOBREVIVIENTES' ordinal='11' />
+                  <column datatype='integer' name='CONDICIONHIJOANTERIOR' ordinal='12' />
+                  <column datatype='integer' name='VIVEHIJOANTERIOR' ordinal='13' />
+                  <column datatype='integer' name='ORDENNACIMIENTO' ordinal='14' />
+                  <column datatype='integer' name='ATENCIONPRENATAL' ordinal='15' />
+                  <column datatype='integer' name='TRIMESTREPRIMERCONSULTA' ordinal='16' />
+                  <column datatype='integer' name='TOTALCONSULTAS' ordinal='17' />
+                  <column datatype='integer' name='SOBREVIVIOPARTO' ordinal='18' />
+                  <column datatype='integer' name='AFILIACION' ordinal='19' />
+                  <column datatype='integer' name='ESCOLARIDAD' ordinal='20' />
+                  <column datatype='integer' name='TRABAJAACTUALMENTE' ordinal='21' />
+                  <column datatype='date' name='FECHANACIMIENTO' ordinal='22' />
+                  <column datatype='datetime' name='HORANACIMIENTO' ordinal='23' />
+                  <column datatype='integer' name='SEXO' ordinal='24' />
+                  <column datatype='integer' name='EDADGESTACIONAL' ordinal='25' />
+                  <column datatype='integer' name='TALLA' ordinal='26' />
+                  <column datatype='integer' name='PESO' ordinal='27' />
+                  <column datatype='integer' name='APGAR' ordinal='28' />
+                  <column datatype='integer' name='SILVERMAN' ordinal='29' />
+                  <column datatype='integer' name='VACUNA_BCG' ordinal='30' />
+                  <column datatype='integer' name='VACUNAHEPATITIS_B' ordinal='31' />
+                  <column datatype='integer' name='VITAMINA_A' ordinal='32' />
+                  <column datatype='integer' name='VITAMINA_K' ordinal='33' />
+                  <column datatype='integer' name='TAMIZAUDITIVO' ordinal='34' />
+                  <column datatype='integer' name='PRODUCTOEMBARAZO' ordinal='35' />
+                  <column datatype='integer' name='TIPOCESAREA' ordinal='36' />
+                  <column datatype='real' name='UTILIZOFORCEPS' ordinal='37' />
+                  <column datatype='integer' name='LUGARNACIMIENTO' ordinal='38' />
+                  <column datatype='string' name='CLUES' ordinal='39' />
+                  <column datatype='real' name='PERSONALATENDIO' ordinal='40' />
+                  <column datatype='integer' name='ENTIDADFEDERATIVAPARTO' ordinal='41' />
+                  <column datatype='integer' name='MUNICIPIOPARTO' ordinal='42' />
+                  <column datatype='integer' name='LOCALIDADPARTO' ordinal='43' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[SOBREVIVIOPARTO]' />
+              <expression op='[Clave (Hoja12)]' />
+            </expression>
+            <first-end-point object-id='TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384' />
+            <second-end-point object-id='Hoja1_090875B9567F4EB6B20F26B52BB808D9' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[ESCOLARIDAD]' />
+              <expression op='[Clave]' />
+            </expression>
+            <first-end-point object-id='TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384' />
+            <second-end-point object-id='Hoja1_09459B7AFA4C4F03BB2F230500D6F09E' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[SEXO]' />
+              <expression op='[Clave (Hoja11)]' />
+            </expression>
+            <first-end-point object-id='TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384' />
+            <second-end-point object-id='Hoja1_2A49F4C276334087974F54F228C9690A' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Nacimientos a traves del tiempo'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='TotalNacimientos2017_2020' name='federated.0emqcif041e73n12lbhfa182ccqj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0emqcif041e73n12lbhfa182ccqj'>
+            <column caption='Fechanacimiento' datatype='date' name='[FECHANACIMIENTO]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Sobrevivioparto' datatype='integer' name='[SOBREVIVIOPARTO]' role='dimension' type='ordinal' />
+            <column-instance column='[SOBREVIVIOPARTO]' derivation='Sum' name='[sum:SOBREVIVIOPARTO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FECHANACIMIENTO]' derivation='Day-Trunc' name='[tdy:FECHANACIMIENTO:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0emqcif041e73n12lbhfa182ccqj].[sum:SOBREVIVIOPARTO:qk]</rows>
+        <cols>[federated.0emqcif041e73n12lbhfa182ccqj].[tdy:FECHANACIMIENTO:qk]</cols>
+      </table>
+      <simple-id uuid='{00E98473-668D-42D7-A596-0CDEC184FC98}' />
+    </worksheet>
+    <worksheet name='Nacimientos por Año'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='TotalNacimientos2017_2020' name='federated.0emqcif041e73n12lbhfa182ccqj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0emqcif041e73n12lbhfa182ccqj'>
+            <column caption='Fechanacimiento' datatype='date' name='[FECHANACIMIENTO]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Sobrevivioparto' datatype='integer' name='[SOBREVIVIOPARTO]' role='dimension' type='ordinal' />
+            <column-instance column='[SOBREVIVIOPARTO]' derivation='Count' name='[cnt:SOBREVIVIOPARTO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FECHANACIMIENTO]' derivation='Year' name='[yr:FECHANACIMIENTO:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0emqcif041e73n12lbhfa182ccqj].[yr:FECHANACIMIENTO:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0emqcif041e73n12lbhfa182ccqj].[cnt:SOBREVIVIOPARTO:qk]</rows>
+        <cols>[federated.0emqcif041e73n12lbhfa182ccqj].[yr:FECHANACIMIENTO:ok]</cols>
+      </table>
+      <simple-id uuid='{55B835AA-6B51-427B-9140-E587903007C4}' />
+    </worksheet>
+    <worksheet name='Nacimientos por Edad y escolaridad'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='TotalNacimientos2017_2020' name='federated.0emqcif041e73n12lbhfa182ccqj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0emqcif041e73n12lbhfa182ccqj'>
+            <column datatype='string' name='[Descripción]' role='dimension' type='nominal' />
+            <column caption='Edad' datatype='string' name='[EDAD]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Sobrevivioparto' datatype='integer' name='[SOBREVIVIOPARTO]' role='dimension' type='ordinal' />
+            <column-instance column='[Descripción]' derivation='None' name='[none:Descripción:nk]' pivot='key' type='nominal' />
+            <column-instance column='[EDAD]' derivation='None' name='[none:EDAD:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SOBREVIVIOPARTO]' derivation='Sum' name='[sum:SOBREVIVIOPARTO:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0emqcif041e73n12lbhfa182ccqj].[none:EDAD:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0emqcif041e73n12lbhfa182ccqj].[sum:SOBREVIVIOPARTO:qk]</rows>
+        <cols>([federated.0emqcif041e73n12lbhfa182ccqj].[none:Descripción:nk] / [federated.0emqcif041e73n12lbhfa182ccqj].[none:EDAD:nk])</cols>
+      </table>
+      <simple-id uuid='{B1D06DA8-55F3-4777-B436-0A0BEBC8C625}' />
+    </worksheet>
+    <worksheet name='Nacimientos por Escolaridad'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='TotalNacimientos2017_2020' name='federated.0emqcif041e73n12lbhfa182ccqj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0emqcif041e73n12lbhfa182ccqj'>
+            <column datatype='string' name='[Descripción]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Sobrevivioparto' datatype='integer' name='[SOBREVIVIOPARTO]' role='dimension' type='ordinal' />
+            <column-instance column='[Descripción]' derivation='None' name='[none:Descripción:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SOBREVIVIOPARTO]' derivation='Sum' name='[sum:SOBREVIVIOPARTO:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0emqcif041e73n12lbhfa182ccqj].[none:Descripción:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0emqcif041e73n12lbhfa182ccqj].[sum:SOBREVIVIOPARTO:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0emqcif041e73n12lbhfa182ccqj].[none:Descripción:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0emqcif041e73n12lbhfa182ccqj].[none:Descripción:nk]</rows>
+        <cols>[federated.0emqcif041e73n12lbhfa182ccqj].[sum:SOBREVIVIOPARTO:qk]</cols>
+      </table>
+      <simple-id uuid='{F3F6233F-1C17-40AC-B3E1-43316ADDF48E}' />
+    </worksheet>
+    <worksheet name='Nacimientos por edad'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='TotalNacimientos2017_2020' name='federated.0emqcif041e73n12lbhfa182ccqj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0emqcif041e73n12lbhfa182ccqj'>
+            <column caption='Edad' datatype='string' name='[EDAD]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Sobrevivioparto' datatype='integer' name='[SOBREVIVIOPARTO]' role='dimension' type='ordinal' />
+            <column-instance column='[EDAD]' derivation='Count' name='[cnt:EDAD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SOBREVIVIOPARTO]' derivation='Count' name='[cnt:SOBREVIVIOPARTO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EDAD]' derivation='CountD' name='[ctd:EDAD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EDAD]' derivation='None' name='[none:EDAD:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0emqcif041e73n12lbhfa182ccqj].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0emqcif041e73n12lbhfa182ccqj].[cnt:SOBREVIVIOPARTO:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0emqcif041e73n12lbhfa182ccqj].[ctd:EDAD:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0emqcif041e73n12lbhfa182ccqj].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0emqcif041e73n12lbhfa182ccqj].[none:EDAD:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0emqcif041e73n12lbhfa182ccqj].[cnt:EDAD:qk]</rows>
+        <cols>[federated.0emqcif041e73n12lbhfa182ccqj].[none:EDAD:nk]</cols>
+      </table>
+      <simple-id uuid='{E6227093-80F2-4A92-A2FB-282DA49B9E88}' />
+    </worksheet>
+    <worksheet name='Nacimientos por sexo'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='TotalNacimientos2017_2020' name='federated.0emqcif041e73n12lbhfa182ccqj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0emqcif041e73n12lbhfa182ccqj'>
+            <_.fcp.ObjectModelTableType.false...column caption='TotalNacimientos2017_2020.csv' datatype='integer' name='[__tableau_internal_object_id__].[TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Descripción (Hoja11)]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='TotalNacimientos2017_2020.csv' datatype='table' name='[__tableau_internal_object_id__].[TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Descripción (Hoja11)]' derivation='None' name='[none:Descripción (Hoja11):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0emqcif041e73n12lbhfa182ccqj].[none:Descripción (Hoja11):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0emqcif041e73n12lbhfa182ccqj].[__tableau_internal_object_id__].[cnt:TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384:qk]</rows>
+        <cols>[federated.0emqcif041e73n12lbhfa182ccqj].[none:Descripción (Hoja11):nk]</cols>
+      </table>
+      <simple-id uuid='{2D86C0CD-93A1-469B-AD0E-FD1E3DF8F941}' />
+    </worksheet>
+    <worksheet name='Nacimientos por sexo por año'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='TotalNacimientos2017_2020' name='federated.0emqcif041e73n12lbhfa182ccqj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0emqcif041e73n12lbhfa182ccqj'>
+            <column datatype='string' name='[Descripción (Hoja11)]' role='dimension' type='nominal' />
+            <column caption='Fechanacimiento' datatype='date' name='[FECHANACIMIENTO]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Sobrevivioparto' datatype='integer' name='[SOBREVIVIOPARTO]' role='dimension' type='ordinal' />
+            <column-instance column='[Descripción (Hoja11)]' derivation='None' name='[none:Descripción (Hoja11):nk]' pivot='key' type='nominal' />
+            <column-instance column='[SOBREVIVIOPARTO]' derivation='Sum' name='[sum:SOBREVIVIOPARTO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FECHANACIMIENTO]' derivation='Year' name='[yr:FECHANACIMIENTO:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0emqcif041e73n12lbhfa182ccqj].[yr:FECHANACIMIENTO:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0emqcif041e73n12lbhfa182ccqj].[sum:SOBREVIVIOPARTO:qk]</rows>
+        <cols>([federated.0emqcif041e73n12lbhfa182ccqj].[none:Descripción (Hoja11):nk] / [federated.0emqcif041e73n12lbhfa182ccqj].[yr:FECHANACIMIENTO:ok])</cols>
+      </table>
+      <simple-id uuid='{CB4E29E9-49D9-48C2-8BB9-DD1F802596E7}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='TotalNacimientos2017_2020' name='federated.0emqcif041e73n12lbhfa182ccqj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0emqcif041e73n12lbhfa182ccqj'>
+            <_.fcp.ObjectModelTableType.false...column caption='TotalNacimientos2017_2020.csv' datatype='integer' name='[__tableau_internal_object_id__].[TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Descripción (Hoja12)]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='TotalNacimientos2017_2020.csv' datatype='table' name='[__tableau_internal_object_id__].[TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Descripción (Hoja12)]' derivation='None' name='[none:Descripción (Hoja12):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0emqcif041e73n12lbhfa182ccqj].[none:Descripción (Hoja12):nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0emqcif041e73n12lbhfa182ccqj].[__tableau_internal_object_id__].[cnt:TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0emqcif041e73n12lbhfa182ccqj].[none:Descripción (Hoja12):nk]' />
+              <text column='[federated.0emqcif041e73n12lbhfa182ccqj].[__tableau_internal_object_id__].[pcto:cnt:TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0emqcif041e73n12lbhfa182ccqj].[__tableau_internal_object_id__].[cnt:TotalNacimientos2017_2020.csv_5BDA541E882E42049FFD782E4311C384:qk]</rows>
+        <cols>[federated.0emqcif041e73n12lbhfa182ccqj].[none:Descripción (Hoja12):nk]</cols>
+      </table>
+      <simple-id uuid='{7A512C59-2D2F-4950-B429-1EECF7A11399}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='34500' x='800' y='1000'>
+              <zone h='98000' id='3' name='Nacimientos por Año' w='34500' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='639' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='63900' x='35300' y='1000'>
+              <zone h='98000' id='9' name='Nacimientos por sexo' w='63900' x='35300' y='1000'>
+                <layout-cache minheight='203' type-h='scalable' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='11' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='10' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Nacimientos por Año' w='34500' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='9' is-fixed='true' name='Nacimientos por sexo' w='63900' x='35300' y='1000'>
+                  <layout-cache minheight='203' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F9B9C2E0-E19A-47E9-8FE7-CF490DE55DED}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='10' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='82400' x='800' y='1000'>
+              <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+                <zone h='49000' id='3' name='Nacimientos por Escolaridad' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49000' id='8' name='Nacimientos por edad' w='82400' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='9' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='98000' id='11' name='Nacimientos por edad' pane-specification-id='3' param='[federated.0emqcif041e73n12lbhfa182ccqj].[none:EDAD:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='12' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Nacimientos por Escolaridad' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='8' is-fixed='true' name='Nacimientos por edad' w='82400' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='98000' id='11' name='Nacimientos por edad' pane-specification-id='3' param='[federated.0emqcif041e73n12lbhfa182ccqj].[none:EDAD:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AA191C40-6233-4D37-AACE-D1B1AF94BA33}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='98000' id='3' name='Nacimientos por Edad y escolaridad' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='9' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='8' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Nacimientos por Edad y escolaridad' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{764E1B83-B4B3-48B0-9715-2A7E42E09F4C}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='830' />
+            <zone h='87863' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='11307'>
+              <flipboard active-id='3' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Como se puede ' captured-sheet='Dashboard 2' id='3' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{AEEF1EB9-C766-4C14-AFD4-AEBB58D55FFF}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Nacimientos por Año'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0emqcif041e73n12lbhfa182ccqj].[yr:FECHANACIMIENTO:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{460CFA42-E746-4A7E-908C-10013E5BC8C8}' />
+    </window>
+    <window class='worksheet' name='Nacimientos por sexo'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.0emqcif041e73n12lbhfa182ccqj].[none:Descripción (Hoja11):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D4EBE47A-24DF-4063-B4C2-705CBDDE436F}' />
+    </window>
+    <window class='worksheet' name='Nacimientos por Escolaridad'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0emqcif041e73n12lbhfa182ccqj].[none:Descripción:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B11CDB41-C7A2-479D-9C43-DC5588CBEFD8}' />
+    </window>
+    <window class='worksheet' name='Nacimientos por sexo por año'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0emqcif041e73n12lbhfa182ccqj].[yr:FECHANACIMIENTO:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D5F1AE28-5B56-412A-9EF1-CFD824A04763}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Nacimientos por edad'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.0emqcif041e73n12lbhfa182ccqj].[none:EDAD:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6B130191-A722-4FC5-AFC6-4711D6F94633}' />
+    </window>
+    <window class='worksheet' name='Nacimientos por Edad y escolaridad'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0emqcif041e73n12lbhfa182ccqj].[none:EDAD:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AD172C23-4695-4837-B11E-572FFF533831}' />
+    </window>
+    <window class='worksheet' name='Nacimientos a traves del tiempo'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{816399FD-FF40-496F-A57E-CDA1B17A04E1}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0emqcif041e73n12lbhfa182ccqj].[none:Descripción (Hoja12):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{15BB1FA9-6291-497B-8E23-2723CF2993EB}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Nacimientos por Año' />
+        <viewpoint name='Nacimientos por sexo'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0D67AAC1-88CB-46C2-8EF4-EEA7D30EC930}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Nacimientos por Escolaridad' />
+        <viewpoint name='Nacimientos por edad'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4FECD718-69C7-4950-B41A-FA9E7BA042BE}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='4' />
+      <simple-id uuid='{EB4ABBD0-FCC8-4B84-9A89-4B4F909B0D81}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Nacimientos por Edad y escolaridad' />
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{36603AE3-FD47-43DC-B483-E3D3C3F935A9}' />
+    </window>
+  </windows>
+</workbook>
